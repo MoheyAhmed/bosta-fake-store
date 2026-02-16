@@ -1,16 +1,130 @@
-# React + Vite
+Bosta Frontend Assessment – Fake Store
+Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React-based e-commerce application built for the Bosta Frontend Engineer technical assessment.
 
-Currently, two official plugins are available:
+The project demonstrates:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clean component architecture
 
-## React Compiler
+API integration
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+State management
 
-## Expanding the ESLint configuration
+Client-side data handling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Protected routes
+
+Cart functionality
+
+Responsive UI
+
+Performance optimizations
+
+Tech Stack
+
+React (Vite)
+
+React Router
+
+TanStack React Query
+
+Zustand (global state)
+
+TailwindCSS
+
+Axios
+
+LocalStorage persistence
+
+Features
+Product Listing
+
+Fetch from /products
+
+Sorting (price asc/desc)
+
+Filter by category
+
+Pagination (10 per page)
+
+Loading / error / empty states
+
+Add to Cart
+
+Product Details
+
+Fetch by ID
+
+Smart fallback:
+
+Local products
+
+Cached products
+
+API
+
+Add to Cart
+
+Create Product (Protected)
+
+Form validation
+
+Categories from /products/categories
+
+POST to /products
+
+Local persistence (Fake Store API does not persist data)
+
+Immediately reflected in listing
+
+Cart (Protected)
+
+Add / update / remove items
+
+Total price calculation
+
+Persisted in localStorage
+
+Authentication
+
+Login via /auth/login
+
+Protected routes (Create & Cart)
+
+Persisted auth state
+
+Logout support
+
+Performance Considerations
+
+React Query caching & staleTime
+
+Memoization with useMemo
+
+React.memo for reusable components
+
+Client-side pagination & sorting
+
+Local merge strategy to avoid unnecessary refetch overrides
+
+Image Handling
+
+Accepts any image URL
+
+CORS-safe configuration
+
+Placeholder fallback for broken images
+
+Run Locally
+npm install
+npm run dev
+
+Demo Credentials
+username: mor_2314
+password: 83r5^_
+
+Notes
+
+Fake Store API does not persist created products.
+Locally created products are stored and merged with API results to maintain a consistent UX.

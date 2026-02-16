@@ -121,12 +121,7 @@ export default function ProductDetailsPage() {
             {product.description}
           </p>
 
-          {localProduct ? (
-            <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-3 text-xs text-amber-800">
-              Note: This is a locally created product (Fake Store API does not
-              persist created items).
-            </div>
-          ) : null}
+         
         </div>
       </div>
     </div>

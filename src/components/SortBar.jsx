@@ -40,9 +40,6 @@ function SortBar({
         </div>
       </div>
 
-      <div className="text-xs text-slate-500">
-        Tip: Sorting + pagination are handled client-side for performance & UX.
-      </div>
     </div>
   );
 }

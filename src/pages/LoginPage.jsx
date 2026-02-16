@@ -78,9 +78,7 @@ export default function LoginPage() {
           {mutation.isPending ? "Logging in..." : "Login"}
         </button>
 
-        <p className="text-xs text-slate-500">
-          Note: Fake Store API typically supports login only. “Signup” isn’t required for core.
-        </p>
+       
       </form>
     </div>
   );
